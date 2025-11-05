@@ -225,7 +225,7 @@ hr {
 
 /* Section 1  */
 .sec1-inner {
-  height: 90vh;
+  height: 100vh;
   background-color: var(--light);
 }
 
@@ -471,6 +471,11 @@ hr {
   }
 
   /* Section 1 */
+  .sec1-inner {
+    height: 85vh;
+    /* background-color: var(--light); */
+  }
+
   .sec1-inner {
     flex-direction: column;
     position: relative;
