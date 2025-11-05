@@ -1,13 +1,13 @@
 // Navbar 
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const navMenu = document.getElementById('nav-menu');
+// const hamburgerBtn = document.getElementById('hamburger-btn');
+// const navMenu = document.getElementById('nav-menu');
 
-hamburgerBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburgerBtn.innerHTML = navMenu.classList.contains('active')
-        ? '<i class="fa-solid fa-xmark fa-xl"></i>'
-        : '<i class="fa-solid fa-bars fa-xl"></i>';
-});
+// hamburgerBtn.addEventListener('click', () => {
+//     navMenu.classList.toggle('active');
+//     hamburgerBtn.innerHTML = navMenu.classList.contains('active')
+//         ? '<i class="fa-solid fa-xmark fa-xl"></i>'
+//         : '<i class="fa-solid fa-bars fa-xl"></i>';
+// });
 
 
 // Section 4 Cards 
@@ -141,7 +141,7 @@ products.forEach((product) => {
     <p class="mt-20">${product.brand}</p>
     <p class="mt-20">${product.name}</p>
     <p><del>${product.oldPrice}</del> <strong>${product.newPrice}</strong></p>
-    <button class="btn mt-20"><a href="#">Add to Cart</a></button>
+    <button class="btn mt-20"><a href="#sec9">Shop Now</a></button>
   `;
 
     container.appendChild(card);

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document - Home</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/png" href="./assets/images/printer-logo.svg">
+    <title>Print Buddies - Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/print.png">
 
     <!-- Google Font (For Font Family) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +19,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17358849952"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17358849952');
+    </script>
 </head>
 
 <body>
-    <nav class="nav">
+    <!-- <nav class="nav">
         <nav class="flex-center nav-inner">
             <div class="nav-left">
                 <a href="index.html"><img src="./assets/images/printer-logo.svg" alt="Brand Logo"></a>
@@ -30,7 +40,7 @@
 
             <div class="nav-center" id="nav-menu">
                 <ul class="flex">
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="our-team.html">Our Team</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -42,16 +52,16 @@
                 <i class="fa-solid fa-bars fa-xl"></i>
             </div>
 
-            <!-- <div class="nav-right">
+            <div class="nav-right">
                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 
-            </div> -->
+            </div>
         </nav>
 
-    </nav>
+    </nav> -->
 
     <div class="call-btn btn">
-        <a href="tel:"><i class="fa-solid fa-phone-volume fa-shake"> </i> +91-86307-39687</a>
+        <a href="tel:8448060103"><i class="fa-solid fa-phone-volume fa-shake mr-15"> </i> 844 806 0103</a>
     </div>
 
     <section class="sec1">
@@ -72,7 +82,8 @@
                         <li class="">✔ Poster Printing</li>
                     </ul>
                 </div>
-                <div class="sec1-left-down btn mt-40"><a href="tel:"><i class="fa-solid fa-phone-volume fa-shake"> </i>
+                <div class="sec1-left-down btn mt-40"><a href="tel:8448060103"><i
+                            class="fa-solid fa-phone-volume fa-shake mr-15"> </i>
                         Get in Touch</a></div>
             </div>
             <div class="sec1-right flex-1">
@@ -201,54 +212,111 @@
         <div class="sec8-inner container">
             <h1>Need Help with Your Printer?</h1>
             <p class=" mt-20">Our experts are available 24/7 to assist you with any printer-related issues.</p>
-            <button class="btn mt-20"><a href="#">Call Now: +91-86307-39687</a></button>
+            <button class="btn mt-20"><a href="tel:8448060103">Call Now: 844 806 0103</a></button>
         </div>
     </section>
 
-    <footer class="footer mt-40">
-        <div class="footer-inner container">
-            <div class="footer-up flex">
-
-                <div class="footer-up-right">
-                    <h2>Call for Support</h2>
-                    <h3 class="mt-20"><a href="#">mobile-number</a></h3>
-                    <h3 class="mt-20"><a href="#">email-id</a></h3>
-                    <!-- <div class="footer-social-media flex">
-                    </div> -->
-                </div>
-                <div class="flex about-link">
-                    <div class="footer-up-left">
-                        <h2>About</h2>
-                        <ul class="footer-align-right">
-                            <li class="mt-20"><a href="about-us.html">About Us</a></li>
-                            <li class="mt-20"><a href="services.html">Services</a></li>
-                            <li class="mt-20"><a href="contact-us.html">Contact Us</a></li>
-                            <li class="mt-20"><a href="sitemap.html">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-up-center">
-                        <h2>Useful Links</h2>
-                        <ul class="footer-align-right">
-                            <li class="mt-20"><a href="terms-conditions.html">Terms & Conditions</a></li>
-                            <li class="mt-20"><a href="shipping-policy.html">Shipping Policy</a></li>
-                            <li class="mt-20"><a href="refund-return.html">Refund & Returns Policy</a></li>
-                            <li class="mt-20"><a href="disclaimer.html">Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <sec class="sec9" id="sec9">
+        <div class="container grid-2 sec9-inner">
+            <div class="sec9-right">
+                <img src="./assets/images/support.jpg" alt="Support Team Image">
             </div>
-            <hr>
+            <div class="sec9-left">
+                <h2>Have a Question? Send Us Your Query</h2>
+                <form action="process-form.php" method="post">
+                    <div class="form6-field mt-20 flex-col">
+                        <label for="name"><b>Name <span>*</span></b></label>
+                        <input id="name" type="text" placeholder="Enter your Name" name="name" required>
+                    </div>
+                    <div class="form6-field mt-20 flex-col">
+                        <label for="email"><b>Email <span>*</span></b></label>
+                        <input id="email" type="email" placeholder="Enter your Email" name="email" required>
+                    </div>
+                    <div class="form6-field mt-20 flex-col">
+                        <label for="number"><b>Phone Number <span>*</span></b></label>
+                        <input id="number" type="number" placeholder="Enter your Phone Number" name="number" required>
+                    </div>
+                    <div class="form6-field mt-20 flex-col">
+                        <label for="subject"><b>Subject <span>*</span></b></label>
+                        <input id="subject" type="text" placeholder="Enter your Subject" name="subject" required>
+                    </div>
+                    <div class="form6-field mt-20 flex-col">
+                        <label for="message"><b>Message <span>*</span></b></label>
+                        <textarea id="message" rows="5" placeholder="Enter your Message" name="message"></textarea>
+                    </div>
+                    <button class="btn mt-20" type="submit" name="send">Send Query</button>
+                </form>
+            </div>
+        </div>
+    </sec>
+
+    <footer class="footer">
+        <div class="container flex-col footer-inner">
+
             <div class="footer-down flex">
-                <p>Copyright © 2025. All Rights Reserved.</p>
-                <ul class="flex">
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
-                </ul>
+                <div class="footer-left flex-1">
+
+                    <div class="flex nav-left">
+                        <img src="./assets/images/print.png" alt="Printer Image">
+                        <h2>Print Buddies</h2>
+                    </div>
+                    <p class="mt-20">Providing the best printer solutions for your office and home. High quality, fast,
+                        and reliable
+                        printers for all your needs.</p>
+                    <a href="tel:8448060103">
+                        <h3 class="mt-20">844 806 0103</h3>
+                    </a>
+                    <a href="mailto:contact@printbuddies.online">
+                        <h3>contact@printbuddies.online</h3>
+                    </a>
+                </div>
+                <!-- <div class="footer-center flex-1">
+                    <h2>Quick Links</h2>
+                    <ul class="mt-20 footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/index.html#products">Shop</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-right flex-1">
+                    <h2>Polcies</h2>
+                    <ul class="mt-20  footer-links">
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/refund-policy.html">Refund Policy</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-up">
+                <b>DISCLAIMER:</b> Products purchased from Print Buddies are directly supported by their manufacturers
+                only. All the warranties of the products are responsible by the manufacturers only. We are not
+                responsible for any warranty. Print Buddies is an online independent e-commerce web portal for a
+                different brands and different products. The products available at our websites are also available on
+                the manufacturer’s website. Print Buddies participates in the Amazon Associates Program. This means
+                that we may earn a commission when you purchase products through the affiliate links on our site, at no
+                additional cost to you. The links provided for the products will redirect you to the official Amazon
+                website. Kindly refer to our Refund Policy or Contact us anytime for any queries. We are here to give
+                you support 24*7 365 days.
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69035607410b351952d9e035/1j8qgg44k';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
