@@ -1,3 +1,15 @@
+// Navbar 
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('nav-menu');
+
+hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburgerBtn.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fa-solid fa-xmark fa-xl"></i>'
+        : '<i class="fa-solid fa-bars fa-xl"></i>';
+});
+
+
 // Section 4 Cards 
 const products = [
     {
